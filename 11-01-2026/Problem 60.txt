@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+    int a,b,x,y;
+    scanf("%d %d", &a,&b);
+    x=a;y=b;
+    while(b!=0){
+        int t=b;
+        b=a%b;
+        a=t;
+    }
+    printf("%d",(x*y)/a);
+    return 0;
+}

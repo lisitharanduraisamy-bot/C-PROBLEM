@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+    int bin,dec=0,base=1,r;
+    scanf("%d",&bin);
+    while(bin>0){
+        r=bin%10;
+        dec+=r*base;
+        base*=2;
+        bin/=10;
+    }
+    printf("%d",dec);
+    return 0;
+}
