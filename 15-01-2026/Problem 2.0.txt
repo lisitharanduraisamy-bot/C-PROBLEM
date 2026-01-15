@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char email[100];
+    char domain[] = "@company.com";
+    scanf("%s",email);
+    int emailLen=strlen(email);
+    int domainLen=strlen(domain);
+    if(emailLen>=domainLen){
+        if(strcmp(email+emailLen-domainLen,domain)==0){
+            printf("Valid\n");
+        } else {
+            printf("Invalid\n");
+        }
+    } else{
+        printf("Invalid");
+    }
+
+    return 0;
+}
