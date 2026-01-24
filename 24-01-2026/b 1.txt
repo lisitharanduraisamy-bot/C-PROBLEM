@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int n, i, salary, id;
+    char name[50];
+
+    scanf("%d", &n);
+
+    for(i = 0; i < n; i++) {
+        scanf("%d %s %d", &id, name, &salary);
+        printf("%d %s %d\n", id, name, salary);
+    }
+    return 0;
+}
