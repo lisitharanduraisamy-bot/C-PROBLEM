@@ -1,0 +1,12 @@
+
+#include <stdio.h>
+
+int main() {
+    int num;
+    printf("Enter a Number;");
+    scanf("%d",&num);
+    printf("Enter a updated Number;");
+    scanf("%d",&num);
+    printf("%d",num);
+    return 0;
+}
