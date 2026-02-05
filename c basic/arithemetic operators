@@ -1,0 +1,17 @@
+
+#include <stdio.h>
+
+int main() {
+    int a,b;
+    scanf("%d %d",&a,&b);
+    int sum;
+    int subration;
+    int multiple;
+    int divide;
+    sum=a+b;
+    subration=a-b;
+    multiple=a*b;
+    divide=a/b;
+    printf("%d\n%d\n%d\n%d",sum,subration,multiple,divide);
+    return 0;
+}
