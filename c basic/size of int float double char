@@ -1,0 +1,16 @@
+
+#include <stdio.h>
+
+int main() {
+    int num=7;
+    float num1=3.876;
+    double num2=9.8697;
+    char ch='A';
+    printf("%d\n",sizeof(num));
+    printf("%d\n",sizeof(num1));
+    printf("%d\n",sizeof(num2));
+    printf("%d",sizeof(ch));
+
+
+    return 0;
+}
