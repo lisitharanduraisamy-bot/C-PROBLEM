@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    int n,k;
+    printf("Enter a two numbers: ");
+    scanf("%d %d",&n,&k);
+    int result;
+    result=n^(1<<k);
+    printf("%d",result);
+
+    return 0;
+}
