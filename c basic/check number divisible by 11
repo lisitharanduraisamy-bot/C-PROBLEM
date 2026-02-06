@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int num;
+    printf("Enter a Number: ");
+    scanf("%d",&num);
+    if(num%11==0){
+        printf("Divisible By 11");
+    }else{
+        printf("Not Divisible By 11");
+    }
+
+    return 0;
+}
