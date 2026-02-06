@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main() {
+    int bill;
+    printf("Enter your Electricity bill: ");
+    scanf("%d",&bill);
+    printf("Bill Amount=Rs %d",bill*5);
+
+    return 0;
+}
