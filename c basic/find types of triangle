@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int lenght1,lenght2,lenght3;
+    printf("Enter Three lenghts: ");
+    scanf("%d %d %d",&lenght1,&lenght2,&lenght3);
+    if((lenght1==lenght2)&&(lenght3==lenght1)&&(lenght3==lenght2)){
+        printf("Equilateral Triangle");
+    }else if((lenght1==lenght2 && lenght1!=lenght3) || (lenght2==lenght3 && lenght2 != lenght1) || (lenght1 == lenght3 && lenght1 != lenght2)){
+        printf("Isosceles Triangle");
+    }else{
+        printf("Scalene triangle");
+    }
+
+    return 0;
+}
