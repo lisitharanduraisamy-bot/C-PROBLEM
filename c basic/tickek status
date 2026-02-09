@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int num;
+    scanf("%d",&num);
+    if (num==0) {
+        printf("waiting list");
+    }else {
+        printf("Confirmed");
+    }
+
+    return 0;
+}
