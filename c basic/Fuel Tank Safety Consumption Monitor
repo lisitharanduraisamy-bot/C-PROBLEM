@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    int fuel;
+    int num_of_trip;
+    int sum=0;
+    int count=0;
+    scanf("%d", &fuel);
+    scanf("%d", &num_of_trip);
+    int arr[num_of_trip];
+    for (int i = 0; i < num_of_trip; i++) {
+        scanf("%d", &arr[i]);
+    }
+    for (int i = 0; i < num_of_trip; i++) {
+        sum=sum+arr[i];
+        if (sum<=fuel) {
+            count++;
+        }
+    }
+    printf("Completed Trip: %d\n", count);
+    int add=0;
+    for (int i = 0; i < count; i++) {
+        add=add+arr[i];
+    }
+    int remaining_fuel;
+    remaining_fuel=fuel-add;
+    printf("Remaining Fuel: %d\n", remaining_fuel);
+
+    return 0;
+}
+
