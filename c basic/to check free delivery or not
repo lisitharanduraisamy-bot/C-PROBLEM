@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int bill_amount;
+    scanf("%d",&bill_amount);
+    if(bill_amount>=499){
+        printf("Free Delivery");
+    }else{
+        printf("Delivery Charges Applied");
+    }
+
+    return 0;
+}
