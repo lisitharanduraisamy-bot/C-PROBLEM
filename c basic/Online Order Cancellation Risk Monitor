@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    int num_order;
+    int count=0;
+    scanf("%d", &num_order);
+    int arr[num_order];
+    for (int i = 0; i < num_order; i++) {
+        scanf("%d", &arr[i]);
+    }
+    for (int i = 0; i < num_order; i++) {
+        if (arr[i]==1) {
+            count++;
+        }
+    }
+    printf("Successful: %d\n", count);
+    int remaining=0;
+    remaining = num_order-count;
+    printf("\nCancelled: %d\n", remaining);
+    if (count>=remaining) {
+        printf("Safe");
+    }else {
+        printf("Risk");
+    }
+
+
+    return 0;
+}
+
