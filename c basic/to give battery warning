@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int charge_level;
+    scanf("%d",&charge_level);
+    if(charge_level<20){
+        printf("Low Battery");
+    }else{
+        printf("Battery Ok");
+    }
+
+    return 0;
+}
