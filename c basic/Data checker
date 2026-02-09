@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int main() {
+    int days;
+    int total_data;
+    int sum=0;
+    int count=0;
+    scanf("%d", &total_data);
+    scanf("%d", &days);
+
+    int arr[days];
+
+    for(int i = 0; i < days; i++) {
+        scanf("%d", &arr[i]);
+    }
+    for(int i = 0; i < days; i++) {
+        sum=sum+arr[i];
+        if(sum<=total_data) {
+            count++;
+        }
+    }
+    printf("Number of days used: %d\n", count);
+    int remaining_data;
+    remaining_data=total_data-sum;
+    if(remaining_data>0) {
+        printf("Remaining Data=%dGB", remaining_data);
+    }else {
+        printf("Remaining Data=0GB");
+    }
+
+
+    return 0;
+}
+
