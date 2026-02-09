@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int type,unit;
+    scanf("%d %d",&type,&unit);
+    if (type==1 && unit<=100) {
+        printf("Bill Rs %d",unit*3);
+    }else if (type==1 && unit>100) {
+        printf("Bill Rs %d",100*3+(unit-100)*5-80);
+    }else if (type==2 && unit<=100) {
+        printf("Bill Rs %d",unit*7);
+    }
+    else {
+        printf("Bill Rs %d",100*7+(unit-100)*10);
+    }
+
+    return 0;
+}
