@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    int capacity;
+    int n;
+    scanf("%d", &capacity);
+    scanf("%d", &n);
+    int arr[n];
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+    int sum = 0;
+    for (int i = 0; i < n; i++) {
+        sum=sum+arr[i];
+    }
+    int rejected_patient;
+    int treated_patients;
+    rejected_patient=sum-capacity;
+    treated_patients=sum-rejected_patient;
+    printf("Treated Patients: %d\n", treated_patients);
+    if (rejected_patient<0) {
+        printf("Rejected Patients: 0\n");
+    }else {
+        printf("Rejected Patients: %d",rejected_patient);
+    }
+
+
+    return 0;
+}
+
