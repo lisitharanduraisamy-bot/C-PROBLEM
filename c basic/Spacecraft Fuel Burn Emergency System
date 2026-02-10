@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    int fuel;
+    int n;
+    scanf("%d", &fuel);
+    scanf("%d", &n);
+    int arr[n];
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+    int sum = 0;
+    int count = 0;
+    for (int i = 0; i < n; i++) {
+        sum=sum+arr[i];
+        if (sum<=fuel) {
+            count++;
+        }
+    }
+    int fuel_wasted;
+    fuel_wasted=sum-fuel;
+    if (count>=n) {
+        printf("Emergancy Stage: Not Occurred\nFuel Wasted: 0\n");
+    }else {
+        printf("Emergancy Stage: %d\n",count+1);
+        printf("Fuel Wasted: %d\n",fuel_wasted);
+    }
+
+    return 0;
+}
+
