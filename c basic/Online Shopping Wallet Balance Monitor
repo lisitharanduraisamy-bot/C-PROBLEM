@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    int wallet_balance;
+    int number_of_withdrawals;
+    scanf("%d", &wallet_balance);
+    scanf("%d", &number_of_withdrawals);
+    int arr[number_of_withdrawals];
+    for (int i = 0; i < number_of_withdrawals; i++) {
+        scanf("%d", &arr[i]);
+    }
+    int sum = 0;
+    int count = 0;
+    for (int i = 0; i < number_of_withdrawals; i++) {
+        sum=sum+arr[i];
+        if (sum<=wallet_balance) {
+            count++;
+        }
+    }
+    int add=0;
+    for (int i = 0; i < count; i++) {
+        add=add+arr[i];
+    }
+    int final_balance;
+    final_balance=wallet_balance-add;
+    printf("Successful Purchases: %d\n", count);
+    printf("Final Balance: %d", final_balance);
+
+
+    return 0;
+}
+
