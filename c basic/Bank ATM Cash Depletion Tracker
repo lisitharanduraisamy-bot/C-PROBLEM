@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    int total_case;
+    int sum=0;
+    int count=0;
+    int add=0;
+    scanf("%d", &total_case);
+    int number_of_withdrawals;
+    scanf("%d", &number_of_withdrawals);
+    int arr[number_of_withdrawals];
+    for (int i = 0; i < number_of_withdrawals; i++) {
+        scanf("%d", &arr[i]);
+    }
+    for (int i = 0; i < number_of_withdrawals; i++) {
+        sum=sum+arr[i];
+        if (sum<total_case) {
+            count++;
+        }
+    }
+    for (int i = 0; i < count; i++) {
+        add=add+arr[i];
+    }
+    int balance;
+    balance=total_case-add;
+    printf("Successful Withdrawals: %d\n", count);
+    printf("Remaining cash: %d", balance);
+
+
+    return 0;
+}
+
