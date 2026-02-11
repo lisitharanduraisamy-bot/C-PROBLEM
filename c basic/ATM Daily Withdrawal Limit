@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+
+    int number_of_withdrawals;
+    scanf("%d", &number_of_withdrawals);
+    int arr[number_of_withdrawals];
+    for (int i = 0; i < number_of_withdrawals; i++) {
+        scanf("%d", &arr[i]);
+    }
+    int sum=0;
+    for (int i = 0; i < number_of_withdrawals; i++) {
+        sum=sum+arr[i];
+    }
+    if (sum<=10000) {
+        printf("Approved");
+    }else {
+        printf("Limit Exceeded");
+    }
+
+    return 0;
+}
