@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+
+    int n;
+    scanf("%d",&n);
+    int arr[n];
+    for(int i=0;i<n;i++) {
+        scanf("%d",&arr[i]);
+    }
+    int current_strike=1;
+    int max_strike=1;
+    for(int i=0;i<n-1;i++) {
+        if(arr[i]<arr[i+1]) {
+            current_strike++;
+        }
+        else {
+            current_strike=1;
+        }
+        if(current_strike>max_strike) {
+            max_strike=current_strike;
+        }
+    }
+    printf("%d\n",max_strike);
+
+    return 0;
+}
