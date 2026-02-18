@@ -8,18 +8,18 @@ int main() {
     for(int i=0;i<n;i++) {
         scanf("%d",&arr[i]);
     }
-    int palindrome=0;
+    int palindrome=1;
     int left,right;
-    left=arr[0];
-    right=arr[n-1];
+    left=0;
+    right=n-1;
         while(left!=right) {
-            if(arr[left]==arr[right]) {
-                palindrome=1;
+            if(arr[left]!=arr[right]) {
+                palindrome=0;
             }
             left++;
             right--;
         }
-    if(palindrome==0) {
+    if(palindrome==1) {
         printf("Palindrome");
     }else {
         printf("Not a Palindrome");
